@@ -1,0 +1,5 @@
+function init(self)
+	-- Toque a música assim que iniciar o jogo
+	sound.play("main:/background_music#sound",
+	 {delay = 1, gain = 0.5, pan = 0, speed = 1.0})
+end

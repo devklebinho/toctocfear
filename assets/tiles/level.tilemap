@@ -1,6 +1,6 @@
 tile_set: "/assets/tiles/level.tilesource"
 layers {
-  id: "layer"
+  id: "floor"
   z: 0.0
   cell {
     x: 0
@@ -12142,5 +12142,9 @@ layers {
     y: 39
     tile: 110
   }
+}
+layers {
+  id: "props"
+  z: 0.0
 }
 material: "/builtins/materials/tile_map.material"
