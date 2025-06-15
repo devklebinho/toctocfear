@@ -59,15 +59,24 @@ embedded_instances {
 }
 embedded_instances {
   id: "Level"
-  data: "components {\n"
-  "  id: \"level\"\n"
-  "  component: \"/assets/tiles/level.tilemap\"\n"
-  "}\n"
-  "components {\n"
-  "  id: \"props\"\n"
-  "  component: \"/assets/tiles/props.tilemap\"\n"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"background\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/sprites/sprite_atlas.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
   "  position {\n"
-  "    z: 1.0\n"
+  "    x: 479.0\n"
+  "    y: 328.0\n"
+  "  }\n"
+  "  scale {\n"
+  "    x: 0.741888\n"
+  "    y: 0.741888\n"
+  "    z: 0.741888\n"
   "  }\n"
   "}\n"
   ""
@@ -86,4 +95,11 @@ embedded_instances {
   "\"\n"
   "}\n"
   ""
+}
+embedded_instances {
+  id: "Walls"
+  data: ""
+  position {
+    y: 338.0
+  }
 }
