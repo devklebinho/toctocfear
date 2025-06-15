@@ -1,7 +1,7 @@
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	self.input = vmath.vector3()  -- para armazenar direção
-	self.speed = 100              -- pixels por segundo
+	self.speed = 200              -- pixels por segundo
 end
 
 function on_input(self, action_id, action)

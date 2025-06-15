@@ -25,8 +25,8 @@ embedded_instances {
   "    index: 0\\n"
   "    count: 3\\n"
   "  }\\n"
-  "  data: 92.00745\\n"
-  "  data: 129.70125\\n"
+  "  data: 36.902363\\n"
+  "  data: 45.636135\\n"
   "  data: 10.0\\n"
   "}\\n"
   "\"\n"
@@ -46,14 +46,15 @@ embedded_instances {
   "}\\n"
   "\"\n"
   "  scale {\n"
-  "    x: 4.149314\n"
-  "    y: 4.99738\n"
+  "    x: 1.664208\n"
+  "    y: 1.758357\n"
   "  }\n"
   "}\n"
   ""
   position {
     x: 649.0
     y: 472.0
+    z: 1.0
   }
   scale3 {
     x: 3.622222
@@ -61,38 +62,10 @@ embedded_instances {
   }
 }
 embedded_instances {
-  id: "Wall"
-  data: "embedded_components {\n"
-  "  id: \"collisionobject\"\n"
-  "  type: \"collisionobject\"\n"
-  "  data: \"type: COLLISION_OBJECT_TYPE_DYNAMIC\\n"
-  "mass: 1.0\\n"
-  "friction: 0.1\\n"
-  "restitution: 0.5\\n"
-  "group: \\\"default\\\"\\n"
-  "mask: \\\"default\\\"\\n"
-  "embedded_collision_shape {\\n"
-  "  shapes {\\n"
-  "    shape_type: TYPE_BOX\\n"
-  "    position {\\n"
-  "      x: 917.0\\n"
-  "      y: 74.0\\n"
-  "    }\\n"
-  "    rotation {\\n"
-  "      z: 0.70710677\\n"
-  "      w: 0.70710677\\n"
-  "    }\\n"
-  "    index: 0\\n"
-  "    count: 3\\n"
-  "  }\\n"
-  "  data: 10.0\\n"
-  "  data: 1453.9824\\n"
-  "  data: 10.0\\n"
-  "}\\n"
-  "\"\n"
+  id: "Level"
+  data: "components {\n"
+  "  id: \"level\"\n"
+  "  component: \"/assets/tiles/level.tilemap\"\n"
   "}\n"
   ""
-  position {
-    y: 206.0
-  }
 }

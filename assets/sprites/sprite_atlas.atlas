@@ -35,18 +35,6 @@ images {
   image: "/assets/sprites/tile015.png"
 }
 images {
-  image: "/builtins/assets/images/logo/logo_256.png"
-}
-images {
-  image: "/builtins/assets/images/logo/logo_blue_256.png"
-}
-images {
-  image: "/builtins/assets/images/logo/logo_blue_512.png"
-}
-images {
-  image: "/builtins/assets/images/logo/logo_blue_1024.png"
-}
-images {
   image: "/builtins/graphics/particle_blob.png"
 }
 animations {
