@@ -1,6 +1,21 @@
 name: "main"
 scale_along_z: 0
 embedded_instances {
+  id: "background_music"
+  data: "components {\n"
+  "  id: \"music\"\n"
+  "  component: \"/main/scripts/music.script\"\n"
+  "}\n"
+  "embedded_components {\n"
+  "  id: \"sound\"\n"
+  "  type: \"sound\"\n"
+  "  data: \"sound: \\\"/assets/sounds/musics/musica-normal.ogg\\\"\\n"
+  "looping: 1\\n"
+  "\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
   id: "player"
   data: "components {\n"
   "  id: \"player\"\n"
@@ -24,9 +39,10 @@ embedded_instances {
   "    }\\n"
   "    index: 0\\n"
   "    count: 3\\n"
+  "    id: \\\"playershape\\\"\\n"
   "  }\\n"
-  "  data: 10.0\\n"
-  "  data: 14.0\\n"
+  "  data: 12.767296\\n"
+  "  data: 21.707865\\n"
   "  data: 0.5\\n"
   "}\\n"
   "\"\n"
@@ -34,15 +50,15 @@ embedded_instances {
   "embedded_components {\n"
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
-  "  data: \"default_animation: \\\"player_idle_front\\\"\\n"
+  "  data: \"default_animation: \\\"personagem\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "size {\\n"
-  "  x: 48.0\\n"
-  "  y: 48.0\\n"
+  "  x: 17.0\\n"
+  "  y: 25.0\\n"
   "}\\n"
   "textures {\\n"
   "  sampler: \\\"texture_sampler\\\"\\n"
-  "  texture: \\\"/assets/sprites/sprite_atlas.atlas\\\"\\n"
+  "  texture: \\\"/assets/sprites/sprites.atlas\\\"\\n"
   "}\\n"
   "\"\n"
   "  scale {\n"
@@ -52,54 +68,123 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 298.0
-    y: 472.0
+    x: 331.0
+    y: 325.0
     z: 1.0
   }
 }
 embedded_instances {
-  id: "Level"
+  id: "level"
+  data: "components {\n"
+  "  id: \"level\"\n"
+  "  component: \"/assets/tiles/chao.tilemap\"\n"
+  "}\n"
+  "components {\n"
+  "  id: \"tapete\"\n"
+  "  component: \"/assets/tiles/tapete.tilemap\"\n"
+  "  position {\n"
+  "    z: -0.5\n"
+  "  }\n"
+  "}\n"
+  "components {\n"
+  "  id: \"parede\"\n"
+  "  component: \"/assets/tiles/parede.tilemap\"\n"
+  "}\n"
+  ""
+}
+embedded_instances {
+  id: "sofa"
   data: "embedded_components {\n"
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
-  "  data: \"default_animation: \\\"background\\\"\\n"
+  "  data: \"default_animation: \\\"sofa\\\"\\n"
   "material: \\\"/builtins/materials/sprite.material\\\"\\n"
   "textures {\\n"
   "  sampler: \\\"texture_sampler\\\"\\n"
-  "  texture: \\\"/assets/sprites/sprite_atlas.atlas\\\"\\n"
+  "  texture: \\\"/assets/sprites/sprites.atlas\\\"\\n"
   "}\\n"
   "\"\n"
   "  position {\n"
-  "    x: 479.0\n"
-  "    y: 328.0\n"
+  "    z: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 321.0
+    y: 384.0
+  }
+  scale3 {
+    x: 2.0
+    y: 2.0
+  }
+}
+embedded_instances {
+  id: "sofa1"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"sofa\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "size {\\n"
+  "  x: 64.0\\n"
+  "  y: 27.0\\n"
+  "}\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/sprites/sprites.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    z: 1.0\n"
+  "  }\n"
+  "}\n"
+  ""
+  position {
+    x: 575.0
+    y: 386.0
+  }
+  scale3 {
+    x: 2.0
+    y: 2.0
+  }
+}
+embedded_instances {
+  id: "armario"
+  data: "embedded_components {\n"
+  "  id: \"sprite\"\n"
+  "  type: \"sprite\"\n"
+  "  data: \"default_animation: \\\"estantevazia-sheet\\\"\\n"
+  "material: \\\"/builtins/materials/sprite.material\\\"\\n"
+  "textures {\\n"
+  "  sampler: \\\"texture_sampler\\\"\\n"
+  "  texture: \\\"/assets/sprites/sprites.atlas\\\"\\n"
+  "}\\n"
+  "\"\n"
+  "  position {\n"
+  "    x: 127.0\n"
+  "    y: 580.0\n"
+  "    z: 1.0\n"
   "  }\n"
   "  scale {\n"
-  "    x: 0.741888\n"
-  "    y: 0.741888\n"
-  "    z: 0.741888\n"
+  "    x: 2.0\n"
+  "    y: 2.0\n"
   "  }\n"
   "}\n"
   ""
 }
 embedded_instances {
-  id: "background_music"
-  data: "components {\n"
-  "  id: \"music\"\n"
-  "  component: \"/main/scripts/music.script\"\n"
-  "}\n"
-  "embedded_components {\n"
-  "  id: \"sound\"\n"
-  "  type: \"sound\"\n"
-  "  data: \"sound: \\\"/assets/sounds/musics/musica-normal.ogg\\\"\\n"
-  "looping: 1\\n"
-  "\"\n"
-  "}\n"
-  ""
+  id: "go1"
+  data: ""
 }
 embedded_instances {
-  id: "Walls"
+  id: "go2"
   data: ""
-  position {
-    y: 338.0
-  }
+}
+embedded_instances {
+  id: "go3"
+  data: ""
+}
+embedded_instances {
+  id: "go4"
+  data: ""
 }

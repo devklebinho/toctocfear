@@ -1,0 +1,79 @@
+images {
+  image: "/assets/sprites/arranjo.png"
+}
+images {
+  image: "/assets/sprites/background.png"
+}
+images {
+  image: "/assets/sprites/comodo.png"
+}
+images {
+  image: "/assets/sprites/estantecomlivros.png"
+}
+images {
+  image: "/assets/sprites/estantevazia-sheet.png"
+}
+images {
+  image: "/assets/sprites/game-title.png"
+}
+images {
+  image: "/assets/sprites/janela.png"
+}
+images {
+  image: "/assets/sprites/janelaestrelas.png"
+}
+images {
+  image: "/assets/sprites/janelavigiante.png"
+}
+images {
+  image: "/assets/sprites/luminaria.png"
+}
+images {
+  image: "/assets/sprites/luminariacomluz.png"
+}
+images {
+  image: "/assets/sprites/parede.png"
+}
+images {
+  image: "/assets/sprites/personagem.png"
+}
+images {
+  image: "/assets/sprites/sofa.png"
+}
+images {
+  image: "/assets/sprites/sofa2.png"
+}
+images {
+  image: "/assets/sprites/tapetecantodireitbaixo-sheet.png"
+}
+images {
+  image: "/assets/sprites/tapetecantodireitcima-sheet.png"
+}
+images {
+  image: "/assets/sprites/tapetecantoesquerdobaixo-sheet.png"
+}
+images {
+  image: "/assets/sprites/tapetecantoesquerdocima-sheet.png"
+}
+images {
+  image: "/assets/sprites/tapetemeiobaixo-sheet.png"
+}
+images {
+  image: "/assets/sprites/tapetemeiocima.png"
+}
+images {
+  image: "/assets/sprites/ui_exit.png"
+}
+images {
+  image: "/assets/sprites/ui_music_and_sounds.png"
+}
+images {
+  image: "/assets/sprites/ui_play.png"
+}
+images {
+  image: "/assets/sprites/vaso.png"
+}
+images {
+  image: "/assets/sprites/tapete.png"
+}
+extrude_borders: 2

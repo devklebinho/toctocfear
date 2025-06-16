@@ -1,6 +1,6 @@
-image: "/assets/sprites/TopDownHouse_FloorsAndWalls.png"
+image: "/assets/sprites/parede.png"
 tile_width: 16
-tile_height: 16
+tile_height: 8
 collision_groups: "default"
 animations {
   id: "anim"
